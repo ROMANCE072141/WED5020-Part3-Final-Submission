@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#3d2b1f">
+    <meta name="author" content="Romance Phogole">
+    <meta name="robots" content="index, follow">
+    <link rel="stylesheet" href="styles/common.css">
+
+    <title>Product Enquiry | YEAST Artisan Bakery &amp; Grocer</title>
+    <meta name="description" content="Ask YEAST Artisan Bakery &amp; Grocer about products, availability, volunteering, sponsorship or a general enquiry.">
+    <meta name="keywords" content="bakery product enquiry, bread availability, pastry enquiry, YEAST contact">
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@5/dist/email.min.js"></script>
+
+    <script>
+    (function () {
+        emailjs.init({
+            publicKey: "ze1F2Uo3cea9TOKFl"
+        });
+    })();
+</script>
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header>
+        <div class="wrap header-inner">
+            <a class="logo" href="index.html" aria-label="YEAST home">YEAST</a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+            <nav id="primary-nav" aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="products.html">Products</a>
+                <a href="enquiry.html">Enquiry</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="banner"><div class="wrap"><p class="eyebrow">WE'RE HERE TO HELP</p><h1>Make an enquiry</h1><p>Tell us what you would like to know about products or the organisation.</p></div></section>
+        <section class="wrap section narrow reveal">
+            <form id="enquiryForm" class="form-card" novalidate>
+                <p>Fields marked <span aria-hidden="true">*</span> are required.</p>
+                <label for="enquiry-name">Full name <span aria-hidden="true">*</span></label>
+                <input id="enquiry-name" name="name" autocomplete="name" required minlength="2" maxlength="80">
+                <label for="enquiry-email">Email address <span aria-hidden="true">*</span></label>
+                <input id="enquiry-email" name="email" type="email" autocomplete="email" required>
+                <label for="enquiry-phone">Telephone (optional)</label>
+                <input id="enquiry-phone" name="telephone" type="tel" autocomplete="tel" inputmode="tel" title="Enter 7 to 20 characters using digits, spaces or + ( ) . -"/>
+                <label for="enquiry-type">Enquiry type <span aria-hidden="true">*</span></label>
+                <select id="enquiry-type" name="enquiry_type" required>
+                    <option value="">Choose an enquiry type</option><option>Product enquiry</option><option>Availability and pricing</option><option>Volunteer opportunity</option><option>Sponsorship</option><option>General enquiry</option>
+                </select>
+                <label for="enquiry-product">Product or subject (optional)</label>
+                <input id="enquiry-product" name="product" maxlength="100" placeholder="e.g. sourdough bread">
+                <label for="enquiry-message">Your message <span aria-hidden="true">*</span></label>
+                <textarea id="enquiry-message" name="message" rows="5" required minlength="10" maxlength="1000" placeholder="Please include the details of your enquiry."></textarea>
+                <button class="button" type="submit">Submit enquiry</button>
+                <p id="formMessage" class="form-message" role="status" aria-live="polite"></p>
+                <p class="small-print">Your enquiry will be sent by email to YEAST Artisan Bakery &amp; Grocer. We look forward to hearing from you.</p>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="wrap">
+            <p>YEAST Artisan Bakery &amp; Grocer | WED5020 | Romance Phogole | ST10524545</p>
+            <p><a href="enquiry.html">Ask about our products</a> · <a href="contact.html">Contact us</a></p>
+            <p class="small-print">Student website demonstration. Contact details and locations must be confirmed before real business use.</p>
+        </div>
+    </footer>
+    <button id="back-to-top" class="back-to-top" type="button" aria-label="Back to top">↑</button>
+    <script src="js/script.js" defer></script>
+
+</body>
+</html>

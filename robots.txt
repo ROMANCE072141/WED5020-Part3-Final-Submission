@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://romance072141.github.io/WED5020-WEBSITE-PROJECTT/WED5020-Website-Project/sitemap.xml

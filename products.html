@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#3d2b1f">
+    <meta name="author" content="Romance Phogole">
+    <meta name="robots" content="index, follow">
+    <link rel="stylesheet" href="styles/common.css">
+
+    <title>Products | Artisan Bread, Pastries and Groceries | YEAST</title>
+    <meta name="description" content="Browse YEAST Artisan Bakery &amp; Grocer product categories, including artisan breads, pastries and selected groceries. Search the product list and open images for a closer look.">
+    <meta name="keywords" content="artisan bread, sourdough, croissants, muffins, groceries, bakery products">
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header>
+        <div class="wrap header-inner">
+            <a class="logo" href="index.html" aria-label="YEAST home">YEAST</a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+            <nav id="primary-nav" aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="products.html">Products</a>
+                <a href="enquiry.html">Enquiry</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="banner"><div class="wrap"><p class="eyebrow">OUR RANGE</p><h1>Products</h1><p>Search our product categories and select an image to view it larger.</p></div></section>
+        <section class="wrap section reveal">
+            <div class="search-tools">
+                <label for="product-search">Search products</label>
+                <input id="product-search" type="search" placeholder="Try “bread”, “muffin” or “groceries”" autocomplete="off">
+                <label for="category-filter">Filter by category</label>
+                <select id="category-filter">
+                    <option value="all">All categories</option><option value="bread">Artisan breads</option><option value="pastries">Pastries</option><option value="groceries">Groceries</option>
+                </select>
+                <p id="product-count" class="muted" aria-live="polite">Showing all categories.</p>
+            </div>
+            <div class="cards product-grid" id="product-grid">
+                <article class="product-card" id="bread" data-category="bread" data-search="artisan bread sourdough whole wheat seeded loaf">
+                    <button class="image-button lightbox-trigger" type="button" data-image="images/bread.jpg" data-alt="Fresh artisan bread with a golden crust" aria-label="Enlarge image of artisan bread"><img src="images/bread.jpg" alt="Fresh artisan bread with a golden crust" loading="lazy" width="800" height="550"></button>
+                    <h2>Fresh breads</h2><p>Everyday favourites for your table.</p><ul><li>Sourdough loaf</li><li>Whole-wheat bread</li><li>Seeded loaf</li></ul><a href="enquiry.html?type=Product%20enquiry&product=Breads">Ask about breads</a>
+                </article>
+                <article class="product-card" id="pastries" data-category="pastries" data-search="pastries croissants muffins sweet savoury seasonal">
+                    <button class="image-button lightbox-trigger" type="button" data-image="images/pastries.jpg" data-alt="A selection of freshly baked pastries" aria-label="Enlarge image of pastries"><img src="images/pastries.jpg" alt="A selection of freshly baked pastries" loading="lazy" width="800" height="550"></button>
+                    <h2>Pastries</h2><p>Sweet and savoury treats for different occasions.</p><ul><li>Croissants</li><li>Muffins</li><li>Seasonal pastries</li></ul><a href="enquiry.html?type=Product%20enquiry&product=Pastries">Ask about pastries</a>
+                </article>
+                <article class="product-card" id="groceries" data-category="groceries" data-search="groceries pantry essentials breakfast local products">
+                    <button class="image-button lightbox-trigger" type="button" data-image="images/groceries.jpg" data-alt="Selected everyday grocery products" aria-label="Enlarge image of groceries"><img src="images/groceries.jpg" alt="Selected everyday grocery products" loading="lazy" width="800" height="550"></button>
+                    <h2>Groceries</h2><p>Selected essentials for your kitchen.</p><ul><li>Pantry essentials</li><li>Breakfast items</li><li>Selected local products</li></ul><a href="enquiry.html?type=Product%20enquiry&product=Groceries">Ask about groceries</a>
+                </article>
+            </div>
+            <p id="no-products" class="notice" hidden>No products match your search. Try a different word or choose “All categories”.</p>
+        </section>
+        <dialog id="image-lightbox" class="lightbox" aria-label="Enlarged product image">
+            <button type="button" class="lightbox-close" aria-label="Close enlarged image">Close ✕</button>
+            <img id="lightbox-image" src="" alt="">
+            <p id="lightbox-caption"></p>
+        </dialog>
+    </main>
+    <footer>
+        <div class="wrap">
+            <p>YEAST Artisan Bakery &amp; Grocer | WED5020 | Romance Phogole | ST10524545</p>
+            <p><a href="enquiry.html">Ask about our products</a> · <a href="contact.html">Contact us</a></p>
+            <p class="small-print">Student website demonstration. Contact details and locations must be confirmed before real business use.</p>
+        </div>
+    </footer>
+    <button id="back-to-top" class="back-to-top" type="button" aria-label="Back to top">↑</button>
+    <script src="js/script.js" defer></script>
+
+</body>
+</html>

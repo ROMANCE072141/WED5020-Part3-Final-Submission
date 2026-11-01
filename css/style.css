@@ -1,0 +1,234 @@
+/* =========================================
+   YEAST ARTISAN BAKERY & GROCER
+   Main Website Stylesheet
+   ========================================= */
+
+
+/* =========================================
+   1. GENERAL STYLES
+   ========================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #2b211b;
+    background: #fffaf5;
+}
+
+.wrap {
+    width: 92%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+
+/* =========================================
+   2. HEADER
+   ========================================= */
+
+header {
+    background: #3d2b1f;
+    padding: 18px 0;
+}
+
+header .wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+
+/* =========================================
+   3. LOGO
+   ========================================= */
+
+.logo {
+    color: white;
+    text-decoration: none;
+    font-size: 1.7rem;
+    font-weight: bold;
+    letter-spacing: 0.12em;
+}
+
+
+/* =========================================
+   4. NAVIGATION
+   ========================================= */
+
+nav {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 6px 4px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   5. HERO SECTION
+   ========================================= */
+
+.hero {
+    background: #ead7c2;
+    padding: 80px 0;
+}
+
+.hero h1 {
+    font-size: clamp(2.2rem, 6vw, 4rem);
+    line-height: 1.05;
+}
+
+
+/* =========================================
+   6. PAGE BANNER
+   ========================================= */
+
+.banner {
+    background: #ead7c2;
+    padding: 40px 0;
+}
+
+
+/* =========================================
+   7. CONTENT SECTIONS
+   ========================================= */
+
+.section {
+    padding: 50px 0;
+}
+
+.narrow {
+    max-width: 800px;
+}
+
+
+/* =========================================
+   8. PRODUCT CARDS
+   ========================================= */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.cards article {
+    background: white;
+    border: 1px solid #e5d9cf;
+    border-radius: 10px;
+    padding: 22px;
+}
+
+
+/* =========================================
+   9. BUTTONS
+   ========================================= */
+
+.button {
+    display: inline-block;
+    background: #3d2b1f;
+    color: white;
+    padding: 11px 18px;
+    border: 0;
+    border-radius: 6px;
+    text-decoration: none;
+    cursor: pointer;
+    font: inherit;
+    font-weight: 600;
+}
+
+.button:hover {
+    background: #5a4030;
+}
+
+
+/* =========================================
+   10. FORMS
+   ========================================= */
+
+form {
+    display: grid;
+    gap: 12px;
+}
+
+form label {
+    display: block;
+    font-weight: 600;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 11px;
+    margin-top: 5px;
+    border: 1px solid #b9aaa0;
+    border-radius: 6px;
+    font: inherit;
+    background: white;
+}
+
+textarea {
+    resize: vertical;
+}
+
+
+/* =========================================
+   11. FOOTER
+   ========================================= */
+
+footer {
+    background: #2a1d16;
+    color: white;
+    padding: 25px 0;
+    margin-top: 30px;
+}
+
+
+/* =========================================
+   12. RESPONSIVE DESIGN
+   ========================================= */
+
+@media (max-width: 700px) {
+
+    header .wrap {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav {
+        width: 100%;
+        gap: 8px;
+    }
+
+    nav a {
+        padding: 6px 2px;
+    }
+
+    .hero {
+        padding: 55px 0;
+    }
+
+    .section {
+        padding: 35px 0;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}
